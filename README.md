@@ -6,12 +6,12 @@
 
 To install Sinatra:
 
-$ gem install sinatra
+``gem install sinatra``
 
 To install Thin:
 
-$ gem install thin
+``gem install thin``
 
 # Launching server
 
-$ ruby app.rb
+``ruby app.rb``
