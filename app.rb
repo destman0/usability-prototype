@@ -41,3 +41,8 @@ get '/contact' do
   @contact_active = true
   erb :contact
 end
+
+get '/setting' do
+  @setting_active =true
+  erb :setting
+end
