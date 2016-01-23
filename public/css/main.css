@@ -1,0 +1,25 @@
+body {
+
+height: 100%;
+}
+
+.mid-section {
+  padding-top: 40px;
+  /*padding: 40px 15px;*/
+  /*text-align: center;*/
+}
+
+#menu-toggle {
+  position: absolute;
+  height: 100%
+  bottom: 0;
+}
+
+
+
+
+
+
+
+
+
