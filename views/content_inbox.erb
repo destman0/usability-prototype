@@ -1,2 +1,53 @@
 <h1>Inbox</h1>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati quos illum, cumque, rerum sint id nam. Dolorem explicabo, ab incidunt delectus fuga modi molestiae tempora praesentium ad. Quo, praesentium, repellendus!</p>
+
+<table class="table table-condensed">
+  <% (1..5).each do |i| %>
+<tr class="unread-mail">
+  <td>Amir</td>
+  <td>Title sdfs f sdfsd sf sdfsfdsf sdf s<small> - sdfsd sdf sd fsdf fsdfsd</small></td>
+  <td></td>
+  <td></td>
+  <td>20-2-2012</td>
+</tr>
+
+<% end %>
+<tr class="read-mail">
+  <td>Bangna</td>
+  <td>Title sdfs f sdfsd sf sdfsfdsf sdf s<small> - sdfsd sdf sd fsdf fsdfsd</small></td>
+  <td><i class="fa fa-paperclip"></i>
+</td>
+<td></td>
+  <td>20-2-2012</td>
+</tr>
+
+<tr class="read-mail">
+  <td>Bangna</td>
+  <td>Title sdfs f sdfsd sf sdfsfdsf sdf s<small> - sdfsd sdf sd fsdf fsdfsd</small></td>
+  <td></td>
+  <td><span class="label label-default">Replied</span>
+</td>
+  <td>20-2-2012</td>
+</tr>
+
+<% (1..5).each do |i| %>
+<tr class="read-mail">
+  <td>Bangna</td>
+  <td>Title sdfs f sdfsd sf sdfsfdsf sdf s<small> - sdfsd sdf sd fsdf fsdfsd</small></td>
+  <td></td>
+  <td></td>
+  <td>20-2-2012</td>
+</tr>
+
+<% end %>
+
+<% (1..5).each do |i| %>
+<tr class="read-mail">
+  <td>Bangna</td>
+  <td>Title sdfs f sdfsd sf sdfsfdsf sdf s<small> - sdfsd sdf sd fsdf fsdfsd</small></td>
+  <td></td>
+  <td><span class="label label-default">Replied</span></td>
+  <td>20-2-2012</td>
+</tr>
+
+<% end %>
+</table>
