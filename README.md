@@ -4,6 +4,10 @@
 * Sinatra
 * Thin
 
+On Windows, to install Ruby probably best use:
+
+[Ruby Installer](http://rubyinstaller.org/)
+
 To install Sinatra:
 
 ``gem install sinatra``
