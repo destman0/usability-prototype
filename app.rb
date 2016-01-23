@@ -1,14 +1,43 @@
 require 'sinatra'
 require 'thin'
+enable :sessions
 
 get '/' do
+  @index_active = true
   erb :index
 end
 
-get '/mail' do
+get '/inbox' do
+  @mail_active = true
+  @inbox_active = true
+  erb :mail
+end
+
+get '/outbox' do
+  @mail_active = true
+  @outbox_active = true
+  erb :mail
+end
+
+get '/draft' do
+  @mail_active = true
+  @draft_active = true
+  erb :mail
+end
+
+get '/spam' do
+  @mail_active = true
+  @spam_active = true
+  erb :mail
+end
+
+get '/trash' do
+  @mail_active = true
+  @trash_active = true
   erb :mail
 end
 
 get '/contact' do
+  @contact_active = true
   erb :contact
 end

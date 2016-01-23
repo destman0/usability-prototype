@@ -2,20 +2,20 @@
 <div id="sidebar-wrapper">
 <ul class="sidebar-nav">
  
-    <li>
-        <a href="#">Inbox</a>
+    <li class=<%= "active" if @inbox_active%> >
+        <a href="/inbox">Inbox</a>
     </li>
-    <li>
-        <a href="#">Outbox</a>
+    <li class=<%= "active" if @outbox_active%>>
+        <a href="/outbox">Outbox</a>
     </li>
-    <li>
-        <a href="#">Drafts</a>
+    <li class=<%= "active" if @draft_active%>>
+        <a href="/draft">Drafts</a>
     </li>
-    <li>
-        <a href="#">Spam</a>
+    <li class=<%= "active" if @spam_active%>>
+        <a href="/spam">Spam</a>
     </li>
-    <li>
-        <a href="#">Trash</a>
+    <li class=<%= "active" if @trash_active%>>
+        <a href="/trash">Trash</a>
     </li>
     
 </ul>

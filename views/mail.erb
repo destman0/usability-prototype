@@ -8,8 +8,17 @@
        
         <div class="row">
             <div class="col-lg-12">
-              <%= erb :content_mail %>
-                
+              <% if @inbox_active %>
+                <%= erb :content_inbox %>
+              <% elsif @outbox_active %>
+                <%= erb :content_outbox %>
+              <% elsif @draft_active %>
+                <%= erb :content_draft %>
+              <% elsif @spam_active %>
+                <%= erb :content_spam %>
+              <% elsif @trash_active %>
+                <%= erb :content_trash %>
+              <% end %>
             </div>
         </div>
         <div class="row">

@@ -15,7 +15,9 @@ height: 100%;
   bottom: 0;
 }
 
-
+#content-wrapper{
+  padding-top: 20px;
+}
 
 
 
