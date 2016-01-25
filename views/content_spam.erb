@@ -12,8 +12,10 @@
 
   <% (1..5).each do |i| %>
 <tr class="unread-mail"><td><input id="mark_all" class="marked" type="checkbox"></td>
-  <td><a href="#">Amir</a></td>
-  <td>Title sdfs f sdfsd sf sdfsfdsf sdf s<small> - sdfsd sdf sd fsdf fsdfsd</small></td>
+  <td>
+  <a href="#"  data-toggle="modal" data-target="#modalMessage">Amir</a>
+  </td>
+  <td><a href="#"  data-toggle="modal" data-target="#modalMessage" >Title sdfs f sdfsd sf sdfsfdsf sdf s<small> - sdfsd sdf sd fsdf fsdfsd</small></a></td>
   <td></td>
   <td></td>
   <td>20-2-2012</td>
@@ -22,8 +24,8 @@
 <% end %>
 
 <tr class="unread-mail"><td><input id="mark_all" class="marked" type="checkbox"></td>
-  <td>Bangna</td>
-  <td>Title sdfs f sdfsd sf sdfsfdsf sdf s<small> - sdfsd sdf sd fsdf fsdfsd</small></td>
+  <td><a href="#"  data-toggle="modal" data-target="#modalMessage">Bangna</a></td>
+  <td><a href="#"  data-toggle="modal" data-target="#modalMessage">Title sdfs f sdfsd sf sdfsfdsf sdf s<small> - sdfsd sdf sd fsdf fsdfsd</small></a></td>
   <td><i class="fa fa-paperclip"></i></td>
   <td>
 </td>
@@ -32,8 +34,8 @@
 
 <% (1..5).each do |i| %>
 <tr class="unread-mail"><td><input id="mark_all" class="marked" type="checkbox"></td>
-  <td>Bangna</td>
-  <td>Title sdfs f sdfsd sf sdfsfdsf sdf s<small> - sdfsd sdf sd fsdf fsdfsd</small></td>
+  <td><a href="#"  data-toggle="modal" data-target="#modalMessage">Bangna</a></td>
+  <td><a href="#"  data-toggle="modal" data-target="#modalMessage">Title sdfs f sdfsd sf sdfsfdsf sdf s<small> - sdfsd sdf sd fsdf fsdfsd</small></a></td>
   <td><i class="fa fa-paperclip"></i></td>
   <td></td>
   <td>20-2-2012</td>
@@ -43,8 +45,8 @@
 
 <% (1..5).each do |i| %>
 <tr class="read-mail"><td><input id="mark_all" class="marked" type="checkbox"></td>
-  <td>Bangna</td>
-  <td>Title sdfs f sdfsd sf sdfsfdsf sdf s<small> - sdfsd sdf sd fsdf fsdfsd</small></td>
+  <td><a href="#"  data-toggle="modal" data-target="#modalMessage">Bangna</a></td>
+  <td><a href="#"  data-toggle="modal" data-target="#modalMessage">Title sdfs f sdfsd sf sdfsfdsf sdf s<small> - sdfsd sdf sd fsdf fsdfsd</small></a></td>
   <td></td>
   <td></td>
   <td>20-2-2012</td>
@@ -52,3 +54,4 @@
 
 <% end %>
 </table>
+<%= erb :modal_message %>
