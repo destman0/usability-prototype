@@ -20,5 +20,20 @@ $(window).load(function(){
                            return false;
                       }
                   }
-          }); 
+          });
+
+
+         $('#mark_all').change(function() {
+            if($(this).is(":checked")) {
+              $('.marked').prop("checked",true);
+            }
+          });
+
+         $('#mark_all').change(function() {
+            if(!$(this).is(":checked")) {
+              $('.marked').prop("checked",false);
+            }
+          });
+
+
       });
