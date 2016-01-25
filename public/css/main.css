@@ -1,18 +1,19 @@
+.right-alligned{
+  text-align: right;
+}
 .content{
   height: 95%;
+  overflow: auto;
+}
+
+.modal{
+  height:100%;
   overflow: auto;
 }
 
 body, html {
           height: 100%;
       }
-      
-.mid-section {
-  padding-top: 40px;
-  height: 100%;
-  /*padding: 40px 15px;*/
-  /*text-align: center;*/
-}
 
 #menu-toggle {
   position: absolute;
@@ -21,9 +22,16 @@ body, html {
 }
 
 #content-wrapper{
-  padding-top: 20px;
+  /*padding-top: 20px;*/
 }
 
+td > a {
+  color: black;
+}
+
+td > a:hover {
+  color: black;
+}
 
 .navbar-brand > a{
   color: white;

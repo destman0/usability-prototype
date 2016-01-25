@@ -52,7 +52,11 @@
           <ul class="nav navbar-nav">
             <form class="navbar-form navbar-left" role="search">
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Search ... ">
+                <% if @mail_active %>
+                <input type="text" class="form-control" placeholder="Search Mail ">
+                <% elsif @contact_active %>
+                <input type="text" class="form-control" placeholder="Search Contacts ">
+                <% end %>
               </div>
             </form>
             <li class=<%='active' if @mail_active %> ><a href="/inbox">Mail</a></li>
