@@ -15,7 +15,7 @@
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
-    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <link href="css/sidebar.css" rel="stylesheet">
     <link rel="stylesheet" href="css/font-awesome.min.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -74,14 +74,16 @@
       </div>
     </nav>
 
-    <div class="container">
-      <div class="mid-section">
-       
-          <%= yield %>
+    <!-- <div id="ma" class="container"> -->
+      <!-- <div class="mid-section"> -->
+      <div class="container-wrapper">
+        <%= yield %>
+      </div>
+          
 
          
 
-      </div>
+      <!-- </div> -->
       <!-- .midsetion -->
 
     </div><!-- /.container -->
@@ -93,6 +95,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
     <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/vendor/jquery.touchSwipe.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
