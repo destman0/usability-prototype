@@ -4,8 +4,8 @@
 <a class="compose btn btn-default" href="#" role="button"  data-toggle="modal" data-target="#myModal"><i class="fa fa-pencil"></i> Compose Mail</a>
 
 <span id="read-delete">
-  <a class="compose btn btn-default btn-default" href="#"><i class="fa fa-times"></i>Delete</a> 
-              <a class="compose btn btn-default btn-default" href="#"><i class="fa fa-check-square-o"></i>Mark as Read</a>
+  <a class="compose btn btn-default btn-default" href="#"><i class="fa fa-times"></i> Delete</a> 
+              <a class="compose btn btn-default btn-default" href="#"><i class="fa fa-check-square-o"></i> Mark as Read</a>
 </span>
 
 
@@ -17,8 +17,6 @@
       <th></th>
       <th>Sender</th>
       <th>Title</th>
-      <th></th>
-      <th>Status</th>
       <th>Date</th>
     </tr>
   </thead>
@@ -27,8 +25,6 @@
     
     <tr>
       <td><input id="mark_all" class="marked" type="checkbox"></td>
-      <td></td>
-      <td></td>
       <td></td>
       <td></td>
       <td></td>
@@ -43,71 +39,39 @@
       </td>
       <td>
         
-        <a href="#"  data-toggle="modal" data-target="#modalMessage" >Title sdfs f sdfsd sf sdfsfdsf sdf s<small> - sdfsd sdf sd fsdf fsdfsd</small></a>
-
-      </td>
-      <td></td>
-      <td></td>
-      <td>20-2-2012</td>
-    </tr>
-
-    <% end %>
-    <tr class="read-mail">
-      <td>      <input class="marked" type="checkbox">  </td>
-      <td><a href="#"  data-toggle="modal" data-target="#modalMessage">Bangna</a>
+            <div class="col-md-10 inside_table">
+              <a href="#"  data-toggle="modal" data-target="#modalMessage" >Title sdfs f sdfsd sf sdfsfdsf sdf s<small> - sdfsd sdf sd fsdf fsdfsd</small></a>
+            </div>
+            <div class="col-md-2">
+              <i class="fa fa-paperclip"></i> <span class="label label-default">Replied</span>
+            </div>
+          
         
+        
+
       </td>
-      <td><a href="#"  data-toggle="modal" data-target="#modalMessage">Title sdfs f sdfsd sf sdfsfdsf sdf s<small> - sdfsd sdf sd fsdf fsdfsd</small></a></td>
-      <td><i class="fa fa-paperclip"></i>
-    </td>
-    <td></td>
       <td>20-2-2012</td>
     </tr>
 
-    <tr class="read-mail">
-      <td>      <input class="marked" type="checkbox">  </td>
-      <td><a href="#"  data-toggle="modal" data-target="#modalMessage">Bangna</a></td>
-      <td><a href="#"  data-toggle="modal" data-target="#modalMessage">Title sdfs f sdfsd sf sdfsfdsf sdf s<small> - sdfsd sdf sd fsdf fsdfsd</small></a></td>
-      <td></td>
-      <td><span class="label label-default">Replied</span>
-    </td>
-      <td>20-2-2012</td>
-    </tr>
+    <% end %>
 
     <% (1..5).each do |i| %>
     <tr class="read-mail">
       <td>      <input class="marked" type="checkbox">  </td>
       <td><a href="#"  data-toggle="modal" data-target="#modalMessage">Bangna</a></td>
-      <td><a href="#"  data-toggle="modal" data-target="#modalMessage">Title sdfs f sdfsd sf sdfsfdsf sdf s<small> - sdfsd sdf sd fsdf fsdfsd</small></a></td>
-      <td></td>
-      <td></td>
+      <td>
+        <div class="col-md-10 inside_table">
+          <a href="#"  data-toggle="modal" data-target="#modalMessage" >Title sdfs f sdfsd sf sdfsfdsf sdf s<small> - sdfsd sdf sd fsdf fsdfsd</small></a>
+        </div>
+        <div class="col-md-2">
+          <!-- <i class="fa fa-paperclip"></i> <span class="label label-default">Replied</span> -->
+        </div>
+      </td>
       <td>20-2-2012</td>
     </tr>
 
     <% end %>
-
-    <% (1..5).each do |i| %>
-    <tr class="read-mail">
-      <td><input class="marked" type="checkbox">  </td>
-      <td><a href="#"  data-toggle="modal" data-target="#modalMessage">Bangna</a></td>
-      <td><a href="#"  data-toggle="modal" data-target="#modalMessage">Title sdfs f sdfsd sf sdfsfdsf sdf s<small> - sdfsd sdf sd fsdf fsdfsd</small></a></td>
-      <td></td>
-      <td><span class="label label-default">Replied</span></td>
-      <td>20-2-2012</td>
-    </tr>
-
-    <% end %>
-    <% (1..5).each do |i| %>
-    <tr class="read-mail">
-      <td><input class="marked" type="checkbox">  </td>
-      <td><a href="#"  data-toggle="modal" data-target="#modalMessage">Bangna</a></td>
-      <td><a href="#"  data-toggle="modal" data-target="#modalMessage">Title sdfs f sdfsd sf sdfsfdsf sdf s<small> - sdfsd sdf sd fsdf fsdfsd</small></a></td>
-      <td></td>
-      <td><span class="label label-default">Replied</span></td>
-      <td>20-2-2012</td>
-    </tr>
-
-    <% end %>
+   
 
   </tbody>
   
