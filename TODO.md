@@ -70,3 +70,4 @@ makes more sense compared to other permutations of the order. - DONE
 * headers for mail
 * different icons
 * wider table for mail
+* The address fields in the compose email overlay  need the correct addresses
