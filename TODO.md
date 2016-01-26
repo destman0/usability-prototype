@@ -66,8 +66,9 @@ makes more sense compared to other permutations of the order. - DONE
 * Fix scrollable on contacts
 * Count labels/tags
 * Username
-* Spam/Trash add compose email
-* headers for mail
+* Spam/Trash add compose email DONE
+* headers for mail DONE
 * different icons
-* wider table for mail
-* The address fields in the compose email overlay  need the correct addresses
+* wider table for mail DONE
+* The address fields in the compose email overlay need the correct addresses
+* the numbers for unread emails in the folders
