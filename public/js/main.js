@@ -47,7 +47,9 @@ $(window).load(function(){
             }
          });
 
-      $(document).ready(function() {
+      
+});
+
+$(document).ready(function() {
             $('#contacts').DataTable();
         } );
-});
