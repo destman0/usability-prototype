@@ -50,6 +50,7 @@ $(window).load(function(){
       
 });
 
-$(document).ready(function() {
-            $('#contacts').DataTable();
+        $(document).ready(function() {
+            $('#contacts').DataTable(
+              );
         } );

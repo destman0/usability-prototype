@@ -52,3 +52,17 @@ makes more sense compared to other permutations of the order. - DONE
 * The user will prefer to have buttons above the text area rather than below it in compose email window. REJECTED - DONE
 
 * Buttons in the view mail section arranged into 2 groups (Reply, Reply All, Forward and Flag, Spam, Delete) lead to easier/ faster interactions times. - DONE
+
+
+## More Todos
+
+* Read to Unread
+* Show only title on smaller screens
+* Delete/Clear
+* Adding Contacts
+* Settings
+* Search Results landing page
+* Fix dummy data
+* Fix scrollable on contacts
+* Count labels/tags
+* Username
