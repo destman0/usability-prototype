@@ -66,3 +66,7 @@ makes more sense compared to other permutations of the order. - DONE
 * Fix scrollable on contacts
 * Count labels/tags
 * Username
+* Spam/Trash add compose email
+* headers for mail
+* different icons
+* wider table for mail
