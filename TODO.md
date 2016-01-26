@@ -65,10 +65,11 @@ makes more sense compared to other permutations of the order. - DONE
 * Fix dummy data
 * Fix scrollable on contacts
 * Count labels/tags
+* Add recipient
 * Username
 * Spam/Trash add compose email DONE
 * headers for mail DONE
-* different icons
+* different icons for side menu
 * wider table for mail DONE
 * The address fields in the compose email overlay need the correct addresses
 * the numbers for unread emails in the folders
