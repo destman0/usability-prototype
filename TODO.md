@@ -14,7 +14,7 @@
 
 * system’s name in the left top corner is not linked to the inbox - DONE
 
-* no add recipient option in create email form 
+* no add recipient option in create email form - DONE
 
 * same style and close position for save, discard, sent buttons in create email - DONE
 
