@@ -17,6 +17,11 @@
     <link href="css/main.css" rel="stylesheet">
     <link href="css/sidebar.css" rel="stylesheet">
     <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/dataTables.bootstrap.min.css">
+    <link rel="stylesheet" href="css/dataTables.jqueryui.min.css">
+    <link rel="stylesheet" href="css/jquery.dataTables_themeroller.css">
+    <link rel="stylesheet" href="css/jquery.dataTables.css">
+    <link rel="stylesheet" href="css/jquery.dataTables.min.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -50,15 +55,7 @@
 
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <form class="navbar-form navbar-left" role="search">
-              <div class="form-group">
-                <% if @mail_active %>
-                <input type="text" class="form-control" placeholder="Search Mail ">
-                <% elsif @contact_active %>
-                <input type="text" class="form-control" placeholder="Search Contacts ">
-                <% end %>
-              </div>
-            </form>
+            
             <li class=<%='active' if @mail_active %> ><a href="/inbox">Mail</a></li>
             <li class=<%='active' if @contact_active %>><a href="/contact">Contacts</a></li>
           </ul>
@@ -100,6 +97,9 @@
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
     <script src="js/vendor/bootstrap.min.js"></script>
     <script src="js/vendor/jquery.touchSwipe.min.js"></script>
+    <script src="js/vendor/jQuery.dataTables.min.js"></script>
+    <script src="js/vendor/dataTables.bootstrap.min.js"></script>
+    <script src="js/vendor/dataTables.jqueryui.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

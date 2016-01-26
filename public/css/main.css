@@ -1,3 +1,21 @@
+.search-form{
+  margin-bottom: 20px;
+}
+
+#compose{
+  padding:10px;
+  margin-bottom: 20px;
+}
+
+.swipe-area{
+  padding: 8px;
+}
+
+.wrap{
+  padding-top: 10px;
+  overflow: auto;
+}
+
 .right-alligned{
   text-align: right;
 }

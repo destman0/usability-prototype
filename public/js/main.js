@@ -33,8 +33,8 @@ $(window).load(function(){
             if(!$(this).is(":checked")) {
               $('.marked').prop("checked",false);
             }
-          });
-
-      
-      
+          });       
+      $(document).ready(function() {
+            $('#contacts').DataTable();
+        } );
 });

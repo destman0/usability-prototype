@@ -1,10 +1,33 @@
 <h1>Drafts</h1>
 
+<a id="compose" class="btn btn-default" href="#" role="button"  data-toggle="modal" data-target="#myModal"><i class="fa fa-pencil"></i> Compose Mail</a>
+
+<div class=" search-form pull-right">
+  <form class="form-inline">
+    <div class="form-group">
+      Search: <input id="search-mail" type="email" class="form-control">
+    </div>
+  </form>
+</div>
+
 <table class="table table-condensed">
+  <tr>
+    <td><input id="mark_all" class="marked" type="checkbox"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
   <% (1..5).each do |i| %>
 <tr class="unread-mail">
-  <td>Amir</td>
-  <td>Title sdfs f sdfsd sf sdfsfdsf sdf s<small> - sdfsd sdf sd fsdf fsdfsd</small></td>
+  <td>
+      <input class="marked" type="checkbox">
+  </td>
+  <td>
+  <a href="#"  data-toggle="modal" data-target="#modalMessage">Amir</a>
+  </td>
+  <td><a href="#"  data-toggle="modal" data-target="#modalMessage" >Title sdfs f sdfsd sf sdfsfdsf sdf s<small> - sdfsd sdf sd fsdf fsdfsd</small></a></td>
   <td></td>
   <td></td>
   <td>20-2-2012</td>
@@ -12,8 +35,11 @@
 
 <% end %>
 <tr class="read-mail">
-  <td>Bangna</td>
-  <td>Title sdfs f sdfsd sf sdfsfdsf sdf s<small> - sdfsd sdf sd fsdf fsdfsd</small></td>
+  <td>      <input class="marked" type="checkbox">  </td>
+  <td><a href="#"  data-toggle="modal" data-target="#modalMessage">Bangna</a>
+    
+  </td>
+  <td><a href="#"  data-toggle="modal" data-target="#modalMessage">Title sdfs f sdfsd sf sdfsfdsf sdf s<small> - sdfsd sdf sd fsdf fsdfsd</small></a></td>
   <td><i class="fa fa-paperclip"></i>
 </td>
 <td></td>
@@ -21,8 +47,11 @@
 </tr>
 
 <tr class="read-mail">
-  <td>Bangna</td>
-  <td>Title sdfs f sdfsd sf sdfsfdsf sdf s<small> - sdfsd sdf sd fsdf fsdfsd</small></td>
+  <td>      <input class="marked" type="checkbox">  </td>
+  <td><a href="#"  data-toggle="modal" data-target="#modalMessage">Bangna</a>
+    
+  </td>
+  <td><a href="#"  data-toggle="modal" data-target="#modalMessage">Title sdfs f sdfsd sf sdfsfdsf sdf s<small> - sdfsd sdf sd fsdf fsdfsd</small></a></td>
   <td></td>
   <td><span class="label label-default">Replied</span>
 </td>
@@ -31,7 +60,10 @@
 
 <% (1..5).each do |i| %>
 <tr class="read-mail">
-  <td><a href="#"  data-toggle="modal" data-target="#modalMessage">Bangna</a></td>
+  <td>      <input class="marked" type="checkbox">  </td>
+  <td><a href="#"  data-toggle="modal" data-target="#modalMessage">Bangna</a>
+    
+  </td>
   <td><a href="#"  data-toggle="modal" data-target="#modalMessage">Title sdfs f sdfsd sf sdfsfdsf sdf s<small> - sdfsd sdf sd fsdf fsdfsd</small></a></td>
   <td></td>
   <td></td>
@@ -42,7 +74,10 @@
 
 <% (1..5).each do |i| %>
 <tr class="read-mail">
-  <td><a href="#"  data-toggle="modal" data-target="#modalMessage">Bangna</a></td>
+  <td>      <input class="marked" type="checkbox">  </td>
+  <td><a href="#"  data-toggle="modal" data-target="#modalMessage">Bangna</a>
+    
+  </td>
   <td><a href="#"  data-toggle="modal" data-target="#modalMessage">Title sdfs f sdfsd sf sdfsfdsf sdf s<small> - sdfsd sdf sd fsdf fsdfsd</small></a></td>
   <td></td>
   <td><span class="label label-default">Replied</span></td>
