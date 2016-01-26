@@ -57,7 +57,7 @@ makes more sense compared to other permutations of the order. - DONE
 ## More Todos
 
 * Read to Unread
-* Show only title on smaller screens
+* Show only title on smaller screens CANCELED
 * Delete/Clear
 * Adding Contacts
 * Settings
