@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="css/jquery.dataTables_themeroller.css">
     <link rel="stylesheet" href="css/jquery.dataTables.css">
     <link rel="stylesheet" href="css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="css/flag-icon.min.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -46,28 +47,35 @@
             
           <div class="navbar-brand">
             <a href="inbox">Webmail</a>
+
           </div>
-          
+
         </div>
         <!-- .navbar-header -->
 
         <% unless @index_active %>
 
         <div id="navbar" class="collapse navbar-collapse">
+          <form class="navbar-form navbar-left" role="search">
+              <div class="form-group">
+                <% if @mail_active %>
+                <input type="text" class="form-control" placeholder="Search Mail ">
+                <% elsif @contact_active %>
+                <input type="text" class="form-control" placeholder="Search Contacts ">
+                <% end %>
+                
+              </div>
+            </form>
           <ul class="nav navbar-nav">
             
             <li class=<%='active' if @mail_active %> ><a href="/inbox">Mail</a></li>
             <li class=<%='active' if @contact_active %>><a href="/contact">Contacts</a></li>
           </ul>
-          <ul class="nav navbar-nav navbar-right">
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> User <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="/">Log Out</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="/setting">Settings</a></li>
-          </ul>
-        </li>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">User</a></li>
+        <li><a href="/setting">Settings</a></li>
+        <li><a href="/">Log Out</a></li>
+        
       </ul>
 
         </div><!--/.nav-collapse -->

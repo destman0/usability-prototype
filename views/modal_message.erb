@@ -10,6 +10,7 @@
         <h2 class="modal-title" id="myModalLabelMessage">Email Title</h2>
         <h4>Sender Name</h4>
         <div><button type="button" class="btn btn-default" data-dismiss="modal">Delete</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Flag</button>
         <button type="button" class="btn btn-default" data-dismiss="modal">Mark As Spam</button></div>
         
       </div>
@@ -148,6 +149,8 @@
     <label for="exampleInputEmail1">To</label>
     <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
   </div>
+      <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModalAddRecipient" data-dismiss="modal">Add Recipient</button>
+<br><br>
   <div class="form-group">
     <label for="exampleInputPassword1">Title</label>
     <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Title">
@@ -160,10 +163,85 @@
 
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Save</button>
-        <button type="button" class="btn btn-default" data-dismiss="modal">Discard</button>
+        <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Save</button>
+        <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Discard</button>
         <button type="button" class="btn btn-default" data-dismiss="modal">Send</button>
       </div>
     </div>
   </div>
 </div>
+
+
+<!-- Modal add recipient -->
+
+<div class="modal fade" id="myModalAddRecipient" tabindex="-1" role="dialog" aria-labelledby="myModalLabelAddRecipient">
+
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabelAddRecipient">Add Recipient</h4>
+      </div>
+      <div class="modal-body">
+       
+        
+
+        <table class="table table-condensed" id="contacts">
+          
+          <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+               
+                
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+               
+                
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td><input type="checkbox"> Tiger Nixon</td>
+                <td>tiger.nixon@mail.com</td>
+                
+               
+            </tr>
+            <tr>
+                <td><input type="checkbox"> Garrett Winters</td>
+                <td>garett.winters@mail.com</td>
+               
+            </tr>
+            <tr>
+                <td><input type="checkbox"> Ashton Cox</td>
+                <td>ashton.cox@mail.com</td>
+                
+            </tr>
+            <tr>
+                <td><input type="checkbox"> Cedric Kelly</td>
+                <td>cedric.kelly@mail.com</td>
+               
+            </tr>
+            <tr>
+                <td><input type="checkbox"> Airi Satou</td>
+                <td>airi.satou@mail.com</td>
+                
+            </tr>
+          </tbody>
+
+        </table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target="#myModal">Add</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal add recipient -->
+
+

@@ -1,3 +1,7 @@
+#contacts_filter{
+  visibility: hidden;
+}
+
 #read-delete{
   visibility: hidden;
 }
