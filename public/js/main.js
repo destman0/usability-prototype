@@ -33,7 +33,20 @@ $(window).load(function(){
             if(!$(this).is(":checked")) {
               $('.marked').prop("checked",false);
             }
-          });       
+          });
+
+         $('.marked').change(function(){
+            if($(this).is(":checked")){
+              $("#read-delete").css("visibility","visible")
+            }
+         });
+
+         $('.marked').change(function(){
+            if(!$(this).is(":checked")){
+              $("#read-delete").css("visibility","hidden")
+            }
+         });
+
       $(document).ready(function() {
             $('#contacts').DataTable();
         } );

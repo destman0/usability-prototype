@@ -1,8 +1,12 @@
+#read-delete{
+  visibility: hidden;
+}
+
 .search-form{
   margin-bottom: 20px;
 }
 
-#compose{
+.compose{
   padding:10px;
   margin-bottom: 20px;
 }
